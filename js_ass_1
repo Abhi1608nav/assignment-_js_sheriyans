@@ -1,0 +1,450 @@
+// 1. Age Category Message - Ask the user for their age. If they are under 18, print "You are a minor" . If they are between 18 and 60, print "You are an adult". If they are above 60, print "You are a senior citizen".
+// let age = Number(prompt("Enter your age"));
+// if(age<18)
+// {
+//     console.log('You are a minor');
+// }else if(age>=18 && age<60)
+// {
+//     console.log("You are an adult");
+// }
+// else{
+//     console.log("You are a senior citizen");
+// }
+
+// 2. Even or Odd Sum - Take two numbers from the user using prompt().If the sum of both numbers is even, print "Even Sum"; Otherwise, print "Odd Sum".
+// let num1 = Number(prompt("Enter first Number"));
+// let num2 = Number(prompt("Enter second number"));
+// if(((num1+num2)&1)===0)
+// {
+//        console.log("Even Sum");
+// }else{
+//     console.log("Odd Sum");
+// }
+
+// 3. Character Case checker - Ask the user for a single character. Check if it's uppercase, lowercase, or neither (not a letter).
+
+// let char = prompt("Enter a character");
+// let arr1 = ['A','B','C','D','E','F','G','H','I',"J","K",'L','M','N','O','P','Q','R','S','T','U','V','X','Y','Z']
+// let arr2 =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+// if(arr1.includes(char))
+// {
+//    console.log('It is a Uppercase letter');
+
+// } else if(arr2.includes(char)){
+
+//    console.log('It is a Lowercase letter');
+
+// }else{
+//     console.log("It is not a letter ");
+// }
+
+// 4. Largest of three Numbers - Take three numbers as input and print the largest number among them without using Math.max();
+
+// let num1 = Number(prompt("Enter your first number"));
+// let num2 = Number(prompt("Enter your second number"));
+// let num3 = Number(prompt("Enter your third number"));
+// let largerstNum  = Math.max(num1,num2,num3);
+// console.log(`The largest number from above three [${num1},${num2},${num3}] is ${largerstNum}`);
+
+// 5. Leap year checker - Ask the user for a year and determine if it's a leap year or not.
+
+// let year = Number(prompt("Enter a year to check if it is a leap year"));
+// if (year % 400 === 0) {
+//     console.log("It is a leap year");
+// } else if (year % 100 === 0) {
+//     console.log("It is not a leap year");
+// } else if (year % 4 === 0) {
+//     console.log("It is a leap year");
+// } else {
+//     console.log("It is not a leap year");
+// }
+
+// 6. Simple Calculator - Ask the user for two numbers and an operator(+,-,/,*). Perfrom the operation and display the result.
+
+// let num1 = Number(prompt("Enter your first number"));
+// let num2 = Number(prompt('Enter your second number'));
+// let operator = prompt('Enter a operator from these one to perfrom a additon (+) , substraction (-) ,multiplication (*) , division (/) ');
+// switch (operator) {
+//     case '*':
+//         console.log(`The multiplication of two number is ${num1} * ${num2}  = ` + Number(num1*num2));
+//         break;
+//     case '+':
+//         console.log(`The addition of two number is ${num1} + ${num2}  = ` + Number(num1+num2));
+//         break;
+//     case '-':
+//         console.log(`The substraction of two number is ${num1} - ${num2}  = ` + Number(num1-(num2)));
+//         break;
+//     case '/':
+//         console.log(`The divison of two number is ${num1} / ${num2}  = ` + Number(num1/num2));
+//         break;
+
+//     default:
+//         console.log("This operator is not compatible")
+
+// }
+
+// 7. Positive ,Negative, or Zero - Take a number input and check if it is positive , negative and zero.
+
+// let num1 = Number(prompt("Enter a number"));
+// if(num1<0)
+// {
+//     console.log("Entered number is a negative one")
+// }
+// else if (num1>0)
+// {
+//     console.log("Entered number is a positive one");
+// }
+// else{
+//     console.log("Entered number is 0");
+// }
+
+// 8. User Greeting - Ask for the user's name and time (24-hour foramt). Greet them accordingly:
+// let nameUser = prompt("Enter your name here");
+// let time = Number(prompt("Enter a time in 24 hour only ( 'example 16 "));
+
+// if(time>=5 && time<=12)
+// {
+//     console.log(`Good Morning,${nameUser}`);
+// }
+// else if(time>12 && time<=17)
+// {
+//     console.log(`Good AfterNoon,${nameUser}`);
+// }
+// else if(time>17 && time<=21)
+// {
+//     console.log(`Good Evening, ${nameUser}`);
+// }
+// else{
+//     console.log(`Good Night,${nameUser}`);
+// }
+
+// 9. Traffic Light System - Ask the user for a traffic light color(red,yellow,green).Print appropriate messages: Red:'Stop' , Yellow :"Get Ready!" , Green:'Go!'
+
+// let color = prompt('Enter a color from these three(red,yellow,green)');
+// color = color.toLowerCase();
+// switch(color)
+// {
+//     case 'red':
+//         console.log("Stop");
+//         break;
+//     case 'yellow':
+//         console.log('Get Ready!');
+//         break;
+//     case 'green':
+//         console.log('Go!');
+//         break;
+//     default:
+//         console.log("Invalid color");
+// }
+
+// 10. Multiplication Table - Ask the user for a number and print its multiplication table up to 10;
+
+// let number = Number(prompt("Enter a number for getting a multipliation table of that"));
+// for(let i = 1; i<=10;i++)
+// {
+//     console.log(`${number} * ${i} = ` + number*i);
+// }
+
+// 11. Grade Caluclator - Ask the user for their marks (0-100).
+// Assign grades based on the range:
+// let marks = Number(prompt("Enter your marks to know what grade you get?"));
+// if (marks >= 90 && marks <= 100) {
+//   console.log("Grade : A");
+// } else if (marks >= 80 && marks <= 89) {
+//   console.log("Grade : B");
+// } else if (marks >= 70 && marks <= 79) {
+//   console.log("Grade : C");
+// } else if (marks >= 60 && marks <= 69) {
+//   console.log("Grade : D");
+// } else {
+//     console.log("Grade : F")
+// }
+
+
+// 12. Simple Login System - Set a predefined username and password. Ask the user to enter their credentials using prompt(). Ask the user to enter their credentials using prompt().If correct, print "Login Successful"; otherwise,print "Incorrect username or password."
+// let username = "Abhinav Shakya";
+// let password = "123@@123";
+// let userInput = prompt("Enter username here");
+// let passwordInput = prompt("Enter your password");
+// if(userInput === username && password === passwordInput)
+// {
+//     console.log("Login Successful");
+// }
+// else{
+//     console.log("Incorrect credentials");
+// }
+
+
+// 13. Swapping without third variable - Take two number from the user and swap their valuse without using a third variable.
+
+// let a = 12;
+// let b = 123;
+// console.log(a,b);
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a,b);
+
+// 14. FizzBuzz (Multiple of Both) - Ask the user for a number. If it's a multiple of both 3 and 5 , print 'FizzBuzz' , if only by 3 print'Fizz' and only by 5 then print 'Buzz' else print the number itself;
+
+// let number = Number(prompt("Enter a number"));
+// if(number%15===0)
+// {
+//     console.log("Entered number is FIZZBUZZ");
+// }
+// else if(number%3===0)
+// {
+//     console.log("Entered number is FIZZ");
+// }else if(number%5===0)
+// {
+//     console.log("Entered number is BUZZ");
+// }
+// else{
+//     console.log(number);
+// }
+
+
+// 15. Number Reversal - take a three -digit number from the user and print its reverse.
+// let number = Number(prompt("Enter a number"));
+// let isNegative = number<0?1:0;
+// number = number<0?(-number):number;
+// let reverseNumber=0;
+// while(number>0)
+// {
+//     let rem = number%10;
+//     number = Math.floor(number/10);
+//     reverseNumber = reverseNumber*10+rem;
+//     // console.log(number,reverseNumber)
+// }
+
+// reverseNumber = isNegative===1?-reverseNumber:reverseNumber;
+// console.log("Reversed Number is " + reverseNumber);
+
+// 16. Sum of Digits - Take a number from the user and print the sum of its digits.
+
+// let number = Number(prompt("Enter a psoitive number"));
+// let num1=number;
+// let sum = 0;
+// while(number>0)
+// {
+//      let rem = number %10;
+//      number = Math.floor(number/10);
+//      sum+=rem;
+// }
+
+// console.log(`The sum of all the digits of ${num1} = ${sum}`);
+
+
+// 17. Palindrome checker - Ask the user for a word. Checker if it reads the same forward and backward . Print "Palindrome" or "Not a palindrome".
+
+// let word = prompt('Enter a word ');
+// let isTrue=false;
+// for(let i = 0;i<Math.floor(word.length/2) ; i++)
+// {
+//      if(word[i]!==word[word.length-i-1])
+//      {
+//         console.log("Not a palindrome");
+//         isTrue=!isTrue;
+//         break;
+//      }
+       
+// }
+// if(!isTrue)
+// {
+//     console.log("The entered word is a Palindrome");
+// }
+
+
+// 18. Reverse without string Methods - Ask the user for a number and reverse it without using split(),reverse() or join().
+// let word = prompt("Enter a number");
+// let reverseWord = '';
+// for(let i = word.length - 1; i>=0 ;i--)
+// {
+//     reverseWord +=word[i];
+// }
+
+// console.log(word,reverseWord);
+
+
+// 19. Find second largest - Take three numbers as input and find the secon largest number (without using sort or Math.max());
+
+// let num1 = Number(prompt("Enter first number"));
+// let num2 = Number(prompt("Enter second number"));
+// let num3 = Number(prompt("Enter third number"));
+
+// if(num1>num2 && num2>num3)
+// {
+
+//         if(num2>num3)
+//         {
+//             console.log("the second largest number is " , num2);
+//         }
+//         else{
+            
+//             console.log("the second largest number is " , num3);
+
+//         }
+     
+// }
+// else if(num2>num3)
+// {
+//      if(num1>num3)
+//      {
+//         console.log("The second largest number is ",num1);
+//      }else{
+//         console.log("The second largest number is ",num3);
+//      }
+// }
+// else{
+//     if(num2>num1)
+//     {
+//         console.log("The second largest number is ",num2);
+
+//     }else{
+//         console.log("The second largest number is ", num1);
+//     }
+// }
+
+
+// 20. Find First Non-Repeating Character - Ask the user for a word and find the first character that does not repeat. Example : hello ->h
+
+// let word = prompt("Enter a word");
+// let charMap = new Map();
+// for(let i = 0 ; i < word.length ; i++)
+// {
+//     if(charMap.has(word[i]))
+//     {
+//         let val = charMap.get(word[i]);
+//         charMap.set(word[i],val+1);
+//     }
+//     else{
+//         charMap.set(word[i],1);
+//     }
+
+// }
+
+// for(let i = 0 ;i<word.length;i++)
+// {
+//     if(charMap.has(word[i]))
+//     {
+//         let val = charMap.get(word[i]);
+//         if(val===1)
+//         {
+//             console.log("The first non repeating character in word is ", word[i]);
+//             break;
+//         }
+//     }
+// }
+
+
+// 21. Even digit counter - Take a number from the user and count how many even digits it has.
+
+// let number = Number(prompt('Enter a number'));
+// let num1 = number;
+// let evenDigitCounter = 0;
+
+// while(number>0)
+// {
+//     let rem = number%10;
+//     number = Math.floor(number/10);
+//     if(rem%2==0)
+//     {
+//         evenDigitCounter++;
+//     }
+// }
+
+// console.log(`Number of even digit count in ${num1} is `,evenDigitCounter);
+
+
+// 22. Nested condition challenge - Ask the user for their age and salary. Print a message based on conditions:
+// If age is below , print"Not eligible"
+// If age is 18 or mote but salary is less than 20000, print "Low salary"
+// If salary is 50000 or more , print "High Salary"
+// Otherwise, print "Medium Salary"
+
+// let age = Number(prompt("Enter your age"));
+// let salary = Number(prompt("Enter your salary"));
+// if(age<18)
+// {
+//     console.log("You are not eligible");
+// }
+// else if(age>18 && salary<20000)
+// {
+//     console.log('Low salary')
+// }
+// else if(age>18 && salary>20000 && salary<50000)
+// {
+//     console.log("Medium Salary")
+// }
+// else{
+//     console.log("High Salary");
+// }
+
+
+// 23. Toggle case - Ask the user for a word and toggle the case of every character. Example: Hello->hELLO
+
+// let word = prompt("Enter a word");
+// let toggleword = '';
+// for(let i = 0 ; i<word.length;i++)
+// {
+//     if(word[i]===word[i].toLocaleLowerCase())
+//     {
+//         toggleword+=word[i].toLocaleUpperCase();
+//     }
+//     else{
+//         toggleword+=word[i].toLocaleLowerCase();
+
+//     }
+// }
+
+// console.log(word,toggleword);
+
+// 24. Find the Missing Number in a sequence - Take a list of consecutive numbers(eexecpt one missing ) and find the missing number. Examole 1,2,3,5 -> 4 is missing
+
+// let arr = [1,2,3,4,5,7,8,9,10,11,12,13];
+// arr.sort((a,b)=>a-b);
+// for(let i = 0 ; i<arr.length;i++)
+// {
+//     if(arr[i]!==arr[0]+i)
+//     {
+//         console.log("Missing number is :" , arr[0]+i);
+//         break;
+//     }
+// }
+
+
+// 25. Convert Number to words - take a single-digit number and print in words
+// let number = Number(prompt("Enter a number (single digit) "));
+// switch (number) {
+//     case 1:
+//         console.log("One")
+//         break;
+//     case 2:
+//         console.log("Two")
+//         break;
+//     case 3:
+//         console.log("Three")
+//         break;
+//     case 4:
+//         console.log("Four")
+//         break;
+//     case 5:
+//         console.log("Five")
+//         break;
+//     case 6:
+//         console.log("Six")
+//         break;
+//     case 7:
+//         console.log("Seven")
+//         break;
+//     case 8:
+//         console.log("Eight")
+//         break;
+//     case 9:
+//         console.log("Nine")
+//         break;
+//     default:
+//         console.log("invalid")
+// }
+
